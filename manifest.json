@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Время Чтения Статьи",
+  "version": "1.0",
+  "description": "Считает сколько минут осталось читать до конца статьи.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
